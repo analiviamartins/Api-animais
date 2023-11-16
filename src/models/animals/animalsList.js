@@ -10,6 +10,10 @@ export class animalsList{
     contador(){
       return this.animals.length
     }
+
+    getAnimalsType(type){
+      return this.animals.filter((animal) => animal.type.toLowerCase() === type.toLowerCase() )
+    }
   
     getAnimalsById(id) {
       return this.animals.find((animal) => animal.id === id);

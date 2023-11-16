@@ -8,7 +8,7 @@ export class animals{
         this.type= type;
         this.color= color;
         this.vacina= this.vacinas(vacina);
-        this.img= this.url_valid(url);
+        this.url = url;
     }
 
     geradorId() {
